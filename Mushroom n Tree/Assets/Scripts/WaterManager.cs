@@ -31,7 +31,7 @@ public class WaterManager : MonoBehaviour
 
     private void Update()
     {
-        growScale = collectedWater * 0.8f;
+        growScale = collectedWater * 0.5f;
     }
 
     private void OnParticleCollision()
@@ -46,7 +46,7 @@ public class WaterManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Goal") && collectedWater > 0)
+        if (other.CompareTag("Goal") && collectedWater == 5)
         {
             soundEffect.PlayOneShot(wateringTree, 0.5f);
             //gameOver.timer = 30f;
