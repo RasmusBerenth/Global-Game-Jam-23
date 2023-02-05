@@ -18,9 +18,9 @@ public class OutOfBound : MonoBehaviour
             transform.position = new Vector3(70, transform.position.y, transform.position.z);
         }
 
-        if (transform.position.x < -70)
+        if (transform.position.x < -65)
         {
-            transform.position = new Vector3(-70, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-65, transform.position.y, transform.position.z);
         }
 
         if (transform.position.z > 100)
